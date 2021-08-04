@@ -10,10 +10,12 @@
   </head>
   <body>
     <%= render 'layouts/header', header:@header %>
-      <main>
-        <p id="notice"><%= notice %></p>
+     <main>
+      <p id="notice"><%= notice %></p>
+
+
+     <%= yield %>
+     <%= render 'layouts/footer', footer:@footer %>
       </main>
-    <%= render 'layouts/footer', footer:@footer %>
-    <%= yield %>
-  </body>
-</html>
+   </body>
+ </html>
